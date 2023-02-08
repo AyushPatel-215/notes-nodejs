@@ -1,6 +1,6 @@
 # notes-nodejs
 
-## notes app is made for managing your notes.
+### notes app is made for managing your notes.
 
 ## Requirements
 - Node is runtime environment use to run this project and node should install in your pc or laptop
