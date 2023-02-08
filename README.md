@@ -36,7 +36,7 @@
   ```
   
   #### removeNote(title)
-- It will load all notes using loadNotes() function. Then checks if there is note whose title matches with title of given note, then it removes it from the notes.json file and if not, then it will print Error message as 'Note not exists!'.
+- It will load all notes using loadNotes() function. Then checks if there is note whose title matches with title of given note, then it removes it from the notes.json file and if not, then it will print Error message as 'Note delete sucessfully!'.
   
   - To remove a note
   ```sh
@@ -53,7 +53,7 @@
   
   #### readNote(title)
 - It will loads all notes using loadNotes() function. Then checks if there exits any note which has title equals to current notes' title, if yes,then 
-  prints title and body of the note in styled text. If no, print error message 'Note not exists!'.
+  prints title and body of the note in styled text. If no, print error message 'Note found title!'.
   
   - To read a specific note,
   ```sh
