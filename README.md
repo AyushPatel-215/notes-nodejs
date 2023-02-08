@@ -17,7 +17,7 @@
   ## Dependencies
 - chalk: Used for styling and coloring console text
 - yargs: Used for parsing the command line text and for defining the command and handling the command
-- fs:  fileSystem is a core Node module used for accessing, managing, and modifying files.
+- fs:  fileSystem is a core Node module used for accessing, managing and modifying files.
 
   ## Information about working
 - Program starts with app.js file which contains only definitions of command like add, remove, list, read and also defines handler for the command using yargs dependency.
