@@ -15,7 +15,8 @@ const { argv } = require('process');
 
 
 const yargs = require('yargs')
-const notes = require('./notes.js')
+const notes = require('./notes.js');
+const { command } = require('yargs');
 
 yargs.version('1.1.0');
 
@@ -59,17 +60,33 @@ yargs.command({
     }
 })
 
+// read command
+yargs.command({
+    command:'read',
+    discribe:'read notes',
+    bulider:{
+        title:{
+            describe:'read note',
+            demandOption:true,
+            type:'string'
+        }
+    },
+    handler(argv){
+        notes.readNotes(argv.title)
+    }
+})
 
 
+
+// show list title command
 yargs.command({
     command:'list',
     discribe:'show list',
     handler(){
-        console.log('this is show list');
+        notes.showNotes()
     }
 })
 yargs.parse();
 
 // console.log(yargs.argv)
-
 // console.log(process.argv)
